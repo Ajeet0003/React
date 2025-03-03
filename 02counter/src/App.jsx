@@ -10,14 +10,14 @@ function App() {
   const addValue=()=>{
 
     // counter=counter+1
-    counter=counter+1
-    if(counter<21){
-    setCounter(counter)
+    if(counter<20){
+    setCounter(counter+1)
+    setCounter(prevCounter=>prevCounter+1)
     console.log("Added ", Math.random(), counter)
     }
   }
   const removeValue=()=>{
-    if(counter>0){
+    if(counter>0 ){
     setCounter(counter-1)
     }
   }
